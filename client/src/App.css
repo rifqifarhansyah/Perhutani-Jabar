@@ -36,3 +36,232 @@
     transform: rotate(360deg);
   }
 }
+
+/* NAVBAR */
+
+.img-small {
+  width: 40px;
+}
+
+.img-medium {
+  width: 180px;
+  margin-left: 150px;
+}
+
+.perhutani-panjang-navbar {
+  width: 200px;
+}
+
+.navbar .logo-perhutani {
+  margin-right: 8px;
+}
+
+
+.navbar-expand-lg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  width: 1518px;
+  height: 94px;
+}
+
+.navbar-item {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: #005840;
+}
+
+.navbar-judul {
+  width: 618px;
+  height: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 380px;
+}
+
+.navbar-menu-container {
+  width: 1037px;
+  height: 94px;
+}
+
+.navbar-item {
+  margin-right: 80px;
+}
+
+.navbar .container {
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-expand-lg .flex {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-expand-lg ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-expand-lg ul li {
+  margin-right: 1rem;
+}
+
+.navbar-expand-lg ul li:last-child {
+  margin-right: 0;
+}
+
+/* FOOTER */
+
+.footer-container{
+  background-color: #005840;
+}
+
+.footer-logo-container{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perhutaniPanjangFooter {
+  width: 180px;
+  opacity: 0.9;
+}
+
+.perhutaniFooter {
+  width: 40px;
+  opacity: 0.9;
+}
+
+.bumnFooter {
+  width: 180px;
+  margin-left: 60px; /* Mengubah posisi horizontal */
+  opacity: 0.9;
+}
+
+.footer-container-2{
+  margin-top: 10px;
+  max-width: 100%;
+  text-align: left;
+  color: white;
+}
+
+.footer-container-a {
+  width: 1320px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-container-b{
+  width: 672px;
+  height: 285px;
+  display: flex;
+  justify-content: flex;
+  align-items: first baseline;
+  flex-direction: column;
+}
+
+.footer-container-c{
+  width: 672px;
+  height: 285px;
+}
+
+.sosmed{
+  color: white;
+}
+
+.footer-container-3 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.footer-container-3 .nav-social {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-container-3 .nav-item {
+  margin-right: 10px; /* Adjust the spacing between items as needed */
+}
+
+.footer-container-c {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 90px;
+}
+
+.footer-column {
+  flex: 1;
+  align-items: flex-start;
+  color: white;
+  text-align: left;
+}
+
+.footer-column h4 {
+  margin-top: 0;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+/* HOMEPAGE */
+
+.img-fluid{
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px; /* Sesuaikan tinggi overlay dengan kebutuhan Anda */
+  background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan opacity 0.5 */
+}
+
+.title-ovrHome{
+  color: white;
+}
+
+.city-image{
+  width: 90%;
+  margin-left: 20px;
+}
+
+.slider-container{
+  padding-right: 700px;
+  padding-left: 700px;
+}
+
+.custom-slider .slick-dots li button:before {
+  color: white;
+}
+
+.custom-slider .slick-dots li.slick-active button:before {
+  color: white;
+}
+
+
