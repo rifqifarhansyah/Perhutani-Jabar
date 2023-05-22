@@ -59,7 +59,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className='main-homepage'>
       {/* Konten halaman beranda */}
       <div className="image-container">
         <img src={img1} alt="Gambar 1" className="img-fluid" />

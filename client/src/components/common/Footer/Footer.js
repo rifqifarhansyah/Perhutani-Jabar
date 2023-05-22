@@ -6,7 +6,7 @@ import bumnPutih from '../../../assets/bumn-putih.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800">
+    <footer className="bg-gray-800 footer">
       <div className="footer-container container mx-auto flex justify-between items-center py-4">
         <div className="footer-container-a flex mx-auto justifiy-between items-center">
           <div className="footer-logo-container">

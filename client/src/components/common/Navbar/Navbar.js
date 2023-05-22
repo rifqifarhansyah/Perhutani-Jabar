@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import perhutaniPanjang from '../../../assets/perhutani.png';
 import perhutani from '../../../assets/icon.png';
 import bumn from '../../../assets/bumn.png';
 
 const Navbar = () => {
+  const location = useLocation();
+  const [activeItem, setActiveItem] = useState('');
+
+  useEffect(() => {
+    const pathname = location.pathname;
+    if (pathname === '/') {
+      setActiveItem('home');
+    } else if (pathname === '/properties') {
+      setActiveItem('properties');
+    } else if (pathname === '/download') {
+      setActiveItem('download');
+    }
+  }, [location.pathname]);
+
   return (
     <nav className="navbar navbar-expand-lg">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container flex">
         <div className="flex items-center">
           <img src={perhutani} alt="Perhutani Logo" className="h-6 w-auto mr-2 img-small logo-perhutani" />
           <img src={perhutaniPanjang} alt="Perhutani Panjang Logo" className="h-6 w-auto perhutani-panjang-navbar" />
@@ -14,20 +29,20 @@ const Navbar = () => {
         <div className="navbar-menu-container mx-auto flex justify-between items-center">
           <div className="navbar-judul mx-auto flex justify-between items-center">
             <ul className="flex mx-auto flex justify-between items-center">
-              <li className="flex-grow mx-auto flex justify-between items-center">
-                <a href="/" className="text-white hover:text-gray-400 navbar-item">
+              <li className={`flex-grow mx-auto flex justify-between items-center ${activeItem === 'home' ? 'active' : ''}`}>
+                <NavLink exact to="/" className="text-white hover:text-gray-400 navbar-item">
                   Home
-                </a>
+                </NavLink>
               </li>
-              <li className="flex-grow">
-                <a href="/about" className="text-white hover:text-gray-400 navbar-item">
+              <li className={`flex-grow ${activeItem === 'properties' ? 'active' : ''}`}>
+                <NavLink to="/properties" className="text-white hover:text-gray-400 navbar-item">
                   Properti
-                </a>
+                </NavLink>
               </li>
-              <li className="flex-grow">
-                <a href="/contact" className="text-white hover:text-gray-400 navbar-item">
+              <li className={`flex-grow ${activeItem === 'download' ? 'active' : ''}`}>
+                <NavLink to="/download" className="text-white hover:text-gray-400 navbar-item">
                   Download
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

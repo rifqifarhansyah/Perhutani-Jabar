@@ -1,3 +1,37 @@
+/* Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #005840;
+  border-radius: 4px;
+}
+
+/* Firefox Browsers */
+/* Untuk Firefox, properti scrollbar-width belum didukung pada saat penulisan ini (September 2021) */
+/* Oleh karena itu, Anda dapat menggunakan library eksternal seperti OverlayScrollbars untuk mengatur tampilan scroll-bar pada Firefox */
+
+/* Contoh untuk scroll-bar di Firefox dengan menggunakan OverlayScrollbars */
+/* Anda perlu menginstal OverlayScrollbars melalui npm atau menggunakan file CSS dan JS yang di-hosting */
+/* Setelah itu, Anda dapat mengatur tampilan scroll-bar di Firefox menggunakan kelas yang disediakan oleh OverlayScrollbars */
+/* Silakan lihat dokumentasi OverlayScrollbars untuk informasi lebih lanjut */
+
+/* Contoh tampilan scroll-bar di Firefox dengan OverlayScrollbars */
+.firefox .os-scrollbar-track {
+  background-color: transparent;
+}
+
+.firefox .os-scrollbar-handle {
+  background-color: #005840;
+  border-radius: 4px;
+}
+
+
 .App {
   text-align: center;
 }
@@ -56,7 +90,6 @@
   margin-right: 8px;
 }
 
-
 .navbar-expand-lg {
   display: flex;
   justify-content: space-between;
@@ -64,15 +97,27 @@
 }
 
 .navbar {
-  width: 1518px;
+  width: auto;
   height: 94px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container {
+  margin: auto;
 }
 
 .navbar-item {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 30px;
   text-decoration: none;
-  color: #005840;
+  color: #a9a9a9; /* Warna abu-abu */
 }
 
 .navbar-judul {
@@ -90,12 +135,6 @@
 
 .navbar-item {
   margin-right: 80px;
-}
-
-.navbar .container {
-  width: 1320px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .navbar-expand-lg .flex {
@@ -119,7 +158,31 @@
   margin-right: 0;
 }
 
+/* Gaya untuk navbar-item aktif */
+.navbar-item.active {
+  color: #005840; /* Warna #005840 */
+}
+
+
 /* FOOTER */
+.footer {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.footer-container {
+  margin-top: -1px;
+}
+
+.footer-container-2 {
+  margin-top: -1px;
+}
+
+.footer-container-a {
+  margin-top: -1px;
+}
+
 
 .footer-container{
   background-color: #005840;
@@ -223,9 +286,17 @@
 }
 
 /* HOMEPAGE */
+.main-homepage {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 
 .img-fluid{
   width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: block;
 }
 
 .image-container {
@@ -265,13 +336,9 @@
 }
 
 /* DOWNLOAD */
-/* Download.css */
-
-/* Download.css */
-/* Download.css */
-
 .header-navbar {
   width: 100%;
+  margin-top: 94px;
 }
 
 .container-baris1 {
@@ -315,7 +382,15 @@
 .gambar-download {
   width: 60%;
   position: relative;
+  padding: 0;
+  margin: 0;
 }
+
+.gambar-download img {
+  margin: 0;
+  padding: 0;
+}
+
 
 .gambar-download img {
   width: 100%;
@@ -343,3 +418,135 @@
 .btn-download:hover {
   background-color: darkgreen;
 }
+
+/* PROPERTI */
+/* PROPERTI */
+.header-properti {
+  width: 100%;
+}
+
+.map-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.map {
+  width: 1500px;
+  height: 600px;
+  margin: 30px;
+  border: 1px solid gray;
+  background-color: rgb(125, 193, 220);
+  display: flex;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+/* --- (4) Leaflet container with map dimensions (other properties optional) --- */
+.leaflet-container {
+  width: 1500px;
+  height: 600px;
+  border-radius: 5px;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+}
+
+.map-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Dropdown Button Styles */
+.dropdown-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  height: 40px;
+  padding: 0 16px;
+  background-color: #005840;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-button:hover {
+  background-color: #003d32;
+}
+
+.dropdown-button:focus {
+  outline: none;
+}
+
+.dropdown-button .arrow-icon {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-button:hover .arrow-icon {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 200px;
+  background-color: #005840;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40px;
+  padding: 0 16px;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #003d32;
+}
+
+.dropdown-item:focus {
+  outline: none;
+}
+
+.dropdown-item .icon {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+  margin-right: 8px;
+}
+
+.request-popup .leaflet-popup-content-wrapper {
+  border-radius: 0px;
+}
+
+

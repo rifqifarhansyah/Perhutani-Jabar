@@ -29,7 +29,7 @@ const Download = () => {
   return (
     <div>
       <div className="header-navbar">
-        <img src={download} alt="Download" />
+        <img className="header-properti" src={download} alt="Download" />
       </div>
       <div className="container-baris1">
         <div className="container-baris1-kolom1">
