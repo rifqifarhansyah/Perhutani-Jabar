@@ -81,7 +81,7 @@ Repository ini dibuat untuk memenuhi tugas Magang Generasi Bertalenta (MAGENTA) 
 ## Video Capture
 <nl>
 
-![Perhutani Jabar dan Banten](https://github.com/briankheng/Tubes3_13521049/blob/frontend/img/ChatGPTLite.gif?raw=true)
+![Perhutani Jabar dan Banten](https://github.com/rifqifarhansyah/Perhutani-Jabar/blob/main/img/perhutani.gif?raw=true)
 
 <a name="screenshots"></a>
 
