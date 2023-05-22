@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import img1 from '../../assets/img1.png';
+import home1 from '../../assets/home1.png';
+import home2 from '../../assets/home2.png';
 import i1 from '../../assets/1.png';
 import i2 from '../../assets/2.png';
 import i3 from '../../assets/3.png';
@@ -75,6 +77,10 @@ const Home = () => {
             </Slider>
           </div>
         </div>
+      </div>
+      <div className="image-container">
+        <img src={home2} alt="Gambar 2" className="img-fluid" />
+        <img src={home1} alt="Gambar 2" className="img-fluid" />
       </div>
     </div>
   );

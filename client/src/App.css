@@ -264,4 +264,82 @@
   color: white;
 }
 
+/* DOWNLOAD */
+/* Download.css */
 
+/* Download.css */
+/* Download.css */
+
+.header-navbar {
+  width: 100%;
+}
+
+.container-baris1 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.container-baris2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 200px;
+}
+
+.container-baris3 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 200px;
+}
+
+.container-baris1 > div,
+.container-baris2 > div,
+.container-baris3 > div {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.container-baris1 > div:last-child,
+.container-baris2 > div:last-child,
+.container-baris3 > div:last-child {
+  margin-right: 0;
+}
+
+.gambar-download {
+  width: 60%;
+  position: relative;
+}
+
+.gambar-download img {
+  width: 100%;
+  height: auto;
+}
+
+.btn-download {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 30px;
+  padding: 8px 16px;
+  background-color: #005840;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-download:hover {
+  background-color: darkgreen;
+}
